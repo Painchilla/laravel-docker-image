@@ -1,7 +1,7 @@
 FROM php:latest
 
   # Update packages 
-RUN apt-get update -yqq && apt-get install gnupg2
+RUN apt-get update -yqq && apt-get install gnupg2 -yqq
 
   # Upgrade to Node 10
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
